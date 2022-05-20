@@ -1,5 +1,6 @@
 import React from "react";
-import beagle from "./beagle.jpg"
+import beagle from "./beagle.jpg";
+import beaglepup from "./beaglepup.jpg";
 import './App.css';
 
 function App( ) {
@@ -7,9 +8,9 @@ function App( ) {
     <div className="App">
       <div>
         <header className="App-header sticky">
-          <h1>Dog club </h1>
-            <div className="dropdown "> 
-            <ion-icon name="reorder-four-outline "></ion-icon>
+        <h1>Dog club </h1>
+            <div className="dropdown push "> 
+            <ion-icon name="reorder-four-outline"></ion-icon>
               <button class="push dropbtn"> </button>
                 <div className="dropdown-content">
                   <a href="about "> About </a>
@@ -25,7 +26,13 @@ function App( ) {
               <div className="">
               <h1 className='buffer'>breeds</h1>
               <h1>breeds</h1>
-                <div className="Breed-Box picture"> <img src={beagle.jpg} alt ="beagle "/>Box Model </div>
+              <div className="slideshow-container">
+              <div className="Breed-Box "> <img className="picture" src={beagle.jpg} alt ="beagle "/>Lorem</div>
+              <div className="Breed-Box "> <img className="picture"src={beaglepup.jpg} alt ="beagle puppy "/>Lorem</div>
+              <div className="Breed-Box "> <img className="picture"src=""alt ="dog "/>Lorem</div>
+              <div className="Breed-Box "> <img className="picture"src="" alt ="dog "/>Lorem</div>
+              <div className="Breed-Box "> <img className="picture"src="" alt ="dog "/>Lorem</div>
+              </div>
                 <br></br>
               </div>
             <div>
@@ -63,8 +70,7 @@ function App( ) {
                 </div>
         </header>
       </div>
-    </div>
-  );
-}
-
+      </div>
+     );
+     }
 export default App;

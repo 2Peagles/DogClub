@@ -23,8 +23,9 @@ ion-icon{
 .dropdown {
   position: relative;
   display: inline-block;
+  padding: 0px 80px  ;
+  border: solid white;
 }
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -73,14 +74,18 @@ height: 12rem;
   color: white;
 }
 .Breed-Box{
-  display:flex;
+  display:inline-flex;
   flex-wrap:wrap;
   color :white;
+  width :350px;
+  height:300px;
+  margin : 10px;
+  background-color: #caf84b;
 }
 .picture {
   background:#282c34;
-  width :350px;
-  height:300px;
+  width :340px;
+  height:280px;
   margin:10px;
   transition:  all 1s;
 }
