@@ -1,9 +1,10 @@
 import React from "react";
-import beagle from "./beagle.jpg";
-import beaglepup from "./beaglepup.jpg";
+import beagle from "./image/beagle.jpg";
+import beaglepup from "./image/beaglepup.jpg";
+import Navigation from "./conponents/Navigation/Navigation";
 import './App.css';
 
-function App( ) {
+function App ( ) {
   return (
     <div className="App">
       <div>
@@ -33,6 +34,8 @@ function App( ) {
               <div className="Breed-Box "> <img className="picture"src="" alt ="dog "/>Lorem</div>
               <div className="Breed-Box "> <img className="picture"src="" alt ="dog "/>Lorem</div>
               </div>
+              <a className='button slide-show next'></a>
+              <a className='button slide-show prev'></a>
                 <br></br>
               </div>
             <div>
@@ -72,5 +75,13 @@ function App( ) {
       </div>
       </div>
      );
-     }
+  }
+  function pages( ) {
+    return (
+    <Navigation/>
+     /*{<SignIn/>
+      <Register/>
+      <Profile/>}*/
+    );
+  }
 export default App;
